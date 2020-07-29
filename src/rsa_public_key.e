@@ -36,10 +36,11 @@ feature
 	modulus: INTEGER_X
 	exponent: INTEGER_X
 
-feature {RSA_KEY_PAIR}--{DEBUG_OUTPUT}
+feature --{RSA_KEY_PAIR}--{DEBUG_OUTPUT}
 
 	debug_output: STRING
 		do
 			result := "Modulus: 0x" + modulus.out_hex
 		end
+
 end
